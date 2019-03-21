@@ -4,9 +4,9 @@
     <div class="four wide column">
       <div class="ui container side-menu">
         <div class="ui vertical menu">
-          <a class="active teal item">
+          <button @click="$router.push('/admin/new-post')" class="ui primary button">
             Create Post
-          </a>
+          </button>
           <a class="item">
             Existing Posts
             <div class="ui label">51</div>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="twelve wide column">
-      <PostList />
+      <PostList isAdmin />
     </div>
   </div>
 </div>

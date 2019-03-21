@@ -1,28 +1,22 @@
 <template>
-<div class="ui segment">
-  <form class="ui form">
-    <div class="field">
-      <label>First Name</label>
-      <input type="text" name="first-name" placeholder="First Name">
-    </div>
-    <div class="field">
-      <label>Last Name</label>
-      <input type="text" name="last-name" placeholder="Last Name">
-    </div>
-    <div class="field">
-      <div class="ui checkbox">
-        <input type="checkbox" tabindex="0" class="hidden">
-        <label>I agree to the Terms and Conditions</label>
-      </div>
-    </div>
-    <button class="ui button" type="submit">Submit</button>
-  </form>
+<div class="ui container">
+  <h1>Create Post</h1>
+  <AdminPostForm />
 </div>
 </template>
 
 <script>
-export default {}
+import AdminPostForm from '@/components/Admin/AdminPostForm'
+export default {
+  components: {
+    AdminPostForm
+  }
+}
 </script>
 
-<style lang="css">
+<style scoped>
+h1 {
+  margin-top: 5%;
+  text-align: center;
+}
 </style>
