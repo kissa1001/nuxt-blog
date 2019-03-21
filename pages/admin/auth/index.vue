@@ -26,6 +26,7 @@
 <script>
 export default {
   name: 'AdminAuthPage',
+  layout: 'admin',
   data() {
     return {
       isLogin: true
